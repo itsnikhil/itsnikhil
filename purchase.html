@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jolt Rentals</title>
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BOOTSTRAP v4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav style="position: fixed;background-color: #fff!important;width: 100vw;z-index: 10000;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img width="72px" style="position: absolute;-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1)); filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));" class="mt-3 pr-2" height="auto" src="logo.png">
+      <a class="navbar-brand ml-5 pl-5" href="index.html">JOLT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#how">How Jolt works<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#why">Why Jolt</a>
+          </li>
+        </ul>
+        <a href="https://joltindiaelectric.ml/" target="blank" class="mr-3" style="color: red;">Jolt family</a>
+        <a href="#" class="btn btn-link mr-5 purchase">Rent Now!</a>
+      </div>
+    </nav>
+    <style type="text/css">
+        .purchase{
+            color:red;
+            border: 1px solid red;
+        }
+        .purchase:hover{
+            background-color: #FF818A;
+            color:#fff;
+        }
+    </style>
+    <section style="background: url(bg2.svg);background-repeat: no-repeat;background-size: cover;background-position: center;" class="pt-5">
+        <div class="col-md-8 offset-md-2 py-5">
+
+            <!-- form user info -->
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0">Purchase</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Phone no.</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="number" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Company (if any)</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Rental Plan</label>
+                            <div class="col-lg-9">
+                                <select id="user_time_zone" class="form-control" size="0">
+                                    <option value="High Range Model">Monthly (₹2999/month)</option>
+                                    <option value="High Range Model">Half Yearly (₹1999/month)</option>
+                                    <option value="High Range Model">Yearly (₹1333/month)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Scooty Model</label>
+                            <div class="col-lg-9">
+                                <select id="user_time_zone" class="form-control" size="0">
+                                    <option value="High Range Model">Ridge (0% Extra charge)</option>
+                                    <option value="High Speed Model">Prise (20% Extra charge)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label form-check-label" for="exampleCheck1">Apply Student discount?</label>
+                            <div class="col-lg-9 pl-5 pt-2">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="reset" class="btn btn-secondary" value="Cancel">
+                                <input type="submit" class="btn btn-primary" value="Confirm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /form user info -->
+        </div>
+    </section>
+    <footer>
+            <div  style="background-image: url('ft-bg.jpg');background-size: cover; background-position: center;background-repeat: no-repeat; height:auto;">
+                <div class="container" style="color: #fff;">
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <dl class="pt-4">
+                                <dh><h4>Our socials</h4></dh>
+                                <dd><a href="#" target="blank" style="color:white;">Facebook</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">Instagram</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">Link 3</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">Link 4</a></dd>
+                            </dl>
+                        </div>
+                        <div class="col-6">
+                            <dl class="pt-4">
+                                <dh><h4>Important links</h4></dh>
+                                <dd><a href="#" target="blank" style="color:white;">Home</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">About</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">Link 3</a></dd>
+                                <dd><a href="#" target="blank" style="color:white;">Link 4</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="background: #231F1F">
+                <div class="row" style="color: #fff">
+                    <div class="col-sm-8 p-2">All rights reserved &copy; copyright 2018</div>
+                    <div class="col-sm-4 p-1"><h4 align="right">+91 9716130797</h4></div>
+            </div>
+        </div>
+        <!-- JAVASCRIPT AT BOTTOM TO LOAD PAGE CONTENT FASTER -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
