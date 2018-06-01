@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisdom Society</title>
+	<!-- RESPONSIVE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- BOOTSTRAP v4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #D23338;">
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	   	<span class="navbar-toggler-icon"></span>
+	 	</button>
+	 	<a class="navbar-brand" href="index.html">Wisdom Society</a>
+	 	<div class="collapse navbar-collapse dropdown" id="navbarTogglerDemo01">
+	   		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      		<li class="nav-item ">
+	        		<a class="nav-link" href="about_us.html">About Us<span class="sr-only">(current)</span></a>
+	      		</li>
+	        	<li class="nav-item dropdown">
+		    		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+		    		<div class="dropdown-menu">
+		      			<a class="dropdown-item" href="abacus.html">Abacus</a>
+		      			<a class="dropdown-item" href="vedic_maths.html">Vedic Maths</a>
+		      			<a class="dropdown-item" href="handwritting_improvement.html">Handwriting Improvement</a>
+		      			<a class="dropdown-item" href="calligraphy.html">Calligraphy</a>
+		      			<div class="dropdown-divider"></div>
+		      			<a class="dropdown-item" href="#">Try Free Demo classes</a>
+		    		</div>
+		  		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#">Pay fee</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="contact us.html">Contact Us</a>
+	      		</li>
+	    	</ul>
+	    	<form class="form-inline my-2 my-lg-0">
+	      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      		<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+	    	</form>
+	  	</div>
+	</nav>
+	<style type="text/css">
+		@media screen and (min-width: 760px) {
+		    .below-nav {
+		        position: absolute;
+		        z-index: 1;
+		        background-color:rgba(255,255,255,0.7);
+		    }
+		    .notif{
+				transform: translateY(-100px);
+			}
+		}
+		@media screen and (max-width: 760px) {
+		    .below-nav {
+		        position: relative;
+		        z-index: 1;
+		        background-color:rgba(255,255,255,0.7);
+		    }
+		    .arrows {
+		        margin-top: 25%;
+		    }
+		}
+	</style>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<div class="container-fluid below-nav pt-2 pb-2" style="">
+			<div class="row">
+				<div class="col-sm-12 col-lg-4">
+					<a href="index.html"><img  class="img-fluid" src="images/logo.png"></a>
+				</div>
+                <div class="navbar navbar-light navbar-expand-lg mr-auto pb-0 mb-0" style="color:black;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse dropdown" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#"><strong>Our centers</strong><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><strong>Admission</strong></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><strong>Abacus</strong></a>
+                                    <a class="dropdown-item" href="#"><strong>Vedic Maths</strong></a>
+                                    <a class="dropdown-item" href="#"><strong>Handwriting Improvement</strong></a>
+                                    <a class="dropdown-item" href="#"><strong>Calligraphy</strong></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><strong>Try Free Demo classes</strong></a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><strong>Downloads</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact us.html"><strong>Franchisee</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+		</div>
+	  	<ol class="carousel-indicators">
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  	</ol>
+	  	<div class="carousel-inner">
+	    	<div class="carousel-item active">
+	      		<img class="d-block w-100" src="images/bg.jpg" alt="First slide">
+	    	</div>
+	    	<div class="carousel-item">
+	      		<img class="d-block w-100" src="images/bg.jpg" alt="Second slide">
+	    	</div>
+	   		<div class="carousel-item">
+	      		<img class="d-block w-100" src="images/bg.jpg" alt="Third slide">
+	    	</div>
+	  	</div>
+	  	<a class="carousel-control-prev arrows" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    	<span class="sr-only">Previous</span>
+	  	</a>
+	  	<a class="carousel-control-next arrows" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    	<span class="sr-only">Next</span>
+	  	</a>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 mt-4">
+				<h2>Welcome to</h2>
+				<h1 style="color:#D23338"><strong>WISDOM EDUCATIONAL SOCIETY</strong></h1>
+			</div>
+			<div class="col-md-5 mt-4">
+				<span>Wisdom Educational Society (WES) was established in 2009 by Senior Educationist and others, with an objective of internationally accepted quality & technical concept based educational  program in India and  providing creative skill education to the society. It is an educational society registered under the Society's Registration No. 216/2009-10, Faridabad.</span><br><br>
+				The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom  Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi.
+				<br><br>
+				<p>The Society has made tremendous progress in the field of academics, mental & creative activities. The students take maximum advantage of these courses and have shown great results by participating in the State and National level competitions . The mental  and creative education enhances the personality of our students and develops self-confidence, self respect and a positive attitude towards life.</p>
+			</div>
+			<div class="col-md-4 p-0">
+				<div class="mx-3 notif" style="background-color: #D23338;">
+					<h2 class="m-3 p-3" style="color:white;">Notifications</h2>
+					<div id="notifis" class="container carousel slide" style="min-height:200px;" data-ride="carousel" data-interval="2500">
+						<div class="carousel-inner">
+					    	<div class="carousel-item active">
+					      		<p class="px-4" style="color: white;font-size: 1.1rem;">Wishing all of you a very Happy New Year 2018. Make it more exiting with our programs.</p>
+					    	</div>
+					    	<div class="carousel-item">
+					      		<p class="px-4" style="color: white;font-size: 1.1rem;">Annual Function was help on 33.13.2018 at DAV School, Sector XX - Faridabad.</p>
+					    	</div>
+					    	<div class="carousel-item">
+					      		<p class="px-4" style="color: white;font-size: 1.1rem;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi.</p>
+					    	</div>
+					  	</div>
+					  	<a class="carousel-control-prev" href="#notifis" role="button" data-slide="prev">
+					    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    	<span class="sr-only">Previous</span>
+					  	</a>
+					  	<a class="carousel-control-next" href="#notifis" role="button" data-slide="next">
+					    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    	<span class="sr-only">Next</span>
+					  	</a>
+					</div>
+					<a href=""><i class="fa fa-plus-circle pl-4 pb-3" aria-hidden="true" style="font-size: 3.5rem;color:white;"></i></a>
+					<div class="p-2 pt-3" style="color:white;background-color: #262626;">
+						<h2>Pay Fee online</h2>
+					</div>
+					<div style="background-color: white;color: #D23338; border: 0.2rem solid #262626">
+						<marquee><center><p class="pt-1 mb-0">Registrations open for session 2018-2019</p></center></marquee>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-4">
+		<div class="row m-0">
+			<div class="col-md-3 mb-3 courses offering1" style="border-left: 10px solid #4779B6;min-height:50px;">
+				<a href="abacus.html"><span class="align-middle no-decor" style="font-size: 1.8rem;"><strong>ABACUS</strong></span></a>
+			</div>
+			<div class="col-md-3 mb-3 courses offering2" style="border-left: 10px solid #D23338;min-height:50px;">
+				<a href="vedic_maths.html"><span class="align-middle no-decor" style="font-size: 1.8rem;"><strong>VEDIC MATHS</strong></span></a>
+			</div>
+			<div class="col-md-3 mb-3 courses offering3" style="border-left: 10px solid #008B4D;min-height:50px;">
+				<a href="handwritting_improvement.html"><span class="align-middle no-decor" style="font-size: 1.8rem;"><strong>HANDWRITING IMPROVEMENT</strong></span></span>
+			</div>
+			<div class="col-md-3 mb-3 courses offering4" style="border-left: 10px solid #FFCF00;min-height:50px;">
+				<a href="calligraphy.html"><span class="align-middle no-decor" style="font-size: 1.8rem;"><strong>CALLIGRAPHY</strong></span></a>
+			</div>
+		</div>
+	</div>
+    <style>
+        .sec {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            flex-direction: column;
+        }
+        img {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .overlay {
+            background: linear-gradient(#473c8b,#473c8b);
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+        .content {
+            width: 100%;
+            z-index: 400;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: url(images/bg.jpg);
+            background-size: cover;
+        }
+        .real-content {
+            z-index: 1000;
+            text-align: center;
+        }
+		.highlight{
+			color: white;
+		}
+		.offering1:hover{
+			background: #4779B6;
+			color: white;
+		}
+		.offering2:hover{
+			background: #D23338;
+			color: white;
+		}
+		.offering3:hover{
+			background: #008B4D;
+			color: white;
+		}
+		.offering4:hover{
+			background: #FFCF00;
+			color: white;
+		}
+		.offering1:hover .no-decor{
+			color:white;
+		}
+		.offering2:hover .no-decor{
+			color:white;
+		}
+		.offering3:hover .no-decor{
+			color:white;
+		}
+		.offering4:hover .no-decor{
+			color:white;
+		} 
+		.no-decor{
+			color:black;
+		}
+		.offering1{
+			transition: all 0.3s ease-out;
+		}
+		.offering2{
+			transition: all 0.3s ease-out;
+		}
+		.offering3{
+			transition: all 0.3s ease-out;
+		}
+		.offering4{
+			transition: all 0.3s ease-out;
+		}
+
+    </style>
+	<section class="sec">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="real-content">
+                <center><h1 class="reason px-1" style="color: white;">Why choose Wisdom Educational Society</h1></center>
+				<div class="row m-2 reason">
+					<div onclick="func(1)" class="highlight col p-2 m-1 active" data-target="#reasons" data-slide-to="0" style="color: #ffd000;cursor:pointer;"><center><h3>Years of Experience</h3></center></div>
+					<div onclick="func(2)" class="highlight col p-2 m-1" data-target="#reasons" data-slide-to="1" style="color: white;cursor:pointer;"><center><h3>Small batch size</h3></center></div>
+					<div onclick="func(3)" class="highlight col p-2 m-1" data-target="#reasons" data-slide-to="2" style="color: white;cursor:pointer;"><center><h3>Best teachers</h3></center></div>
+					<div onclick="func(4)" class="highlight col p-2 m-1" data-target="#reasons" data-slide-to="3" style="color: white;cursor:pointer;"><center><h3>Skill focused</h3></center></div>
+					<div onclick="func(5)" class="highlight col p-2 m-1" data-target="#reasons" data-slide-to="4" style="color: white;cursor:pointer;"><center><h3>Affordable pricing</h3></center></div>
+					<script type="text/javascript">
+						var high = document.getElementsByClassName("highlight");
+						function func(pos){
+							for (var i = 0; i < 5; i++) {
+		  						if (i === (pos-1)) {
+    								high[i].style.color = "#ffd000";
+								} else {
+									high[i].style.color = "white";
+								}
+							}
+						}
+					</script>
+					<style type="text/css">
+						@media screen and (min-width: 480px) {
+						    .reason {
+						        padding-top: 30px;
+						    }
+						    .mobile-reason-text{
+						    	font-size: 1.4rem;
+						    	text-align: left;
+						    }
+						}
+						@media screen and (max-width: 480px) {
+						    .reason {
+						        padding-top: 30px;
+						    }
+						    .mobile-reason-text{
+						    	font-size: 1.1rem;
+						    	text-align: left;
+						    }
+						}
+					</style>
+					<div id="reasons" class="container carousel slide" data-ride="carousel" data-interval="0">
+					  	<div class="col-md-12 carousel-inner">
+					    	<div class="carousel-item active">
+					      		<p class="reason px-4 mobile-reason-text" style="color: white;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi... </p>
+					      		<a href=""><i class="fa fa-plus-circle mt-0 pt-0 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a>
+					    	</div>
+					    	<div class="reason carousel-item">
+					      		<p class="px-4 mobile-reason-text" style="color: white;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi... </p>
+					      		<a href=""><i class="fa fa-plus-circle mt-0 pt-0 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a>
+					    	</div>
+					    	<div class="reason carousel-item">
+					      		<p class="px-4 mobile-reason-text" style="color: white;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi... </p>
+					      		<a href=""><i class="fa fa-plus-circle mt-0 pt-0 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a>
+					    	</div>
+					    	<div class="reason carousel-item">
+					      		<p class="px-4 mobile-reason-text" style="color: white;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi... </p>
+					      		<a href=""><i class="fa fa-plus-circle mt-0 pt-0 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a>
+					    	</div>
+					    	<div class="reason carousel-item">
+					      		<p class="px-4 mobile-reason-text" style="color: white;">The Wisdom Educational Society has done pioneering work in the field of education. Within a span of 5 years the Wisdom Society from a humble beginning of more than 20 centres in Faridabad, Gurgaon, Palwal and Delhi... </p>
+					      		<a href=""><i class="fa fa-plus-circle mt-0 pt-0 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a>
+					    	</div>
+				  		</div>
+					</div>
+            	</div>
+        	</div>
+    	</div>
+    </section>
+    <div class="row px-0 mx-0">
+    	<div class="col-md-8 pt-5 px-0 mx-0 pb-3" style="background-color: #DFDADA;">
+    		<div class="container col-md-7">
+	    		<h3>What are you waiting for</h3>
+	    		<h1 class="py-3" style="color: #D23338;">Try Free Demo classes</h1>
+	    		<p class="mobile-reason-text">We have many centers in cities Delhi and NCR. Demo sessions runs on fixed timings and limited seats</p>
+	    	</div>
+	    	<center><button class="btn btn-danger BTN-LG">BOOK FREE NOW</button></center>
+    	</div>
+    	<div class="col-md-4 pt-5 pb-3" style="background-color: #D23338;">
+    		<div class="container">
+    			<center><h1 style="color: white">Download brochure</h1>
+    			<a href=""><i class="fa fa-download mt-0 pt-4 pb-3" aria-hidden="true" style="font-size: 4rem;color:white;"></i></a></center>
+    			<p class="mobile-reason-text" style="text-align: center;">Click here to download as pdf</p>
+
+    		</div>
+    	</div>
+    </div>
+    <div class="container pb-3">
+    	<center><h1 class="title pt-5 pb-3" style="color: #D23338;">EVENTS @ WISDOM SOCIETY</h1></center>
+    	<div class="row">
+    		<div class="col-md-6 pb-3">
+    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(1)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+    		</div>
+    		<div class="col-md-6 pb-3">
+    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(2)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+    		</div>
+    		<div class="col-md-6 pb-3">
+    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(3)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+    		</div>
+    		<div class="col-md-6 pb-3">
+    			<div class="row">
+	    			<div class="col-6 pb-3">
+		    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(4)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+		    		</div>
+		    		<div class="col-6 pb-3">
+		    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(5)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+		    		</div>
+		    		<div class="col-6 pb-3">
+		    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(6)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+		    		</div>
+		    		<div class="col-6 pb-3">
+		    			<div class="card hover-shadow cursor" onclick="openModal();currentSlide(7)">
+							<img  class="card-img-top img-res" src="images/bg.jpg">
+							<div class="card-body m-0 p-0">
+						  		<p class="card-header">Event title</p>
+						  	</div>
+						</div>
+		    		</div>
+	    		</div>
+    		</div>
+    		<div class="col-12"><center><button class="btn btn-danger btn-lg">View all</button></center></div>
+    	</div>
+    </div>
+    <style>
+		/* The Modal (background) */
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  overflow: auto;
+		  background-color: black;
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  position: relative;
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 0;
+		  width: 90%;
+		  max-width: 1200px;
+		}
+
+		/* The Close Button */
+		.close {
+		  color: white;
+		  position: absolute;
+		  top: 10px;
+		  right: 25px;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #999;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		.mySlides {
+		  display: none;
+		}
+
+		.cursor {
+		  cursor: pointer
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  z-index: 1002;
+		  background-color: white;
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(255, 255, 255, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  z-index: 1002;
+		  color: #f2f2f2;
+		  padding-left: 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s;
+		}
+		#myModal{
+			z-index: 1001;
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+		}
+	</style>
+    <div id="myModal" class="modal">
+    	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	 	<span class="close cursor" onclick="closeModal()">&times;</span>
+	 	<div class="modal-content">
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">1 / 7</div>
+	      		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">2 / 7</div>
+	      		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">3 / 7</div>
+	      		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">4 / 7</div>
+	    		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">5 / 7</div>
+	    		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">6 / 7</div>
+	    		<img src="images/bg.jpg" style="width:100%">
+	    	</div>
+
+	    	<div class="mySlides">
+	      		<div class="numbertext mobile-reason-text">7 / 7</div>
+	    		<img src="images/bg.jpg" style="width:100%">
+    		</div>
+    	</div>
+    </div>
+	<script>
+	function openModal() {
+	  document.getElementById('myModal').style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById('myModal').style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	}
+	</script>
+    <div class="container-fluid">
+        <div class="row center" style="background-color:#D23338;">
+            <div class="col-12 p-5">
+                <span class="mobile-reason-text" style="color:white;font-style: italic;"><strong>"</strong>Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable.<strong>"</strong></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0" style="background-color:#262626;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.8139883072868!2d77.27710961031187!3d28.394685680827976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cde8662a6bcb1%3A0x3b4a4c428fbe5a8c!2sWisdom+Educational+Society!5e0!3m2!1sen!2sin!4v1517133711976" width="100%" height="320px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #262626;">
+    	<div class="container pt-4 pb-2">
+    		<center><div class="row pb-3">
+    			<div class="col-sm-6 col-lg-4 pt-1">
+    				<h3 class="pb-3" style="color:#DEB817;text-align: left;">Courses</h3>
+    				<p style="color: white;text-align: left;">Abacus</p>
+    				<p style="color: white;text-align: left;">Vedic Maths</p>
+    				<p style="color: white;text-align: left;">Handwriting Improvement</p>
+    				<p style="color: white;text-align: left;">Calligraphy</p>
+    			</div>
+    			<div class="col-sm-6 col-lg-5 pt-1">
+    				<h3 class="pb-3" style="color:#DEB817;text-align: left;">Address</h3>
+    				<p style="color: white;text-align: left;"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;&nbsp;D-1303 N.I.T. Faridabad - 121001</p>
+    				<p style="color: white;text-align: left;"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;+91 9310104006, 9810071624</p>
+    				<p style="color: white;text-align: left;"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;wisdomsociety@gmail.com</p>
+		        </div>
+                <div class="col-sm-6 col-lg-3 pl-4 pt-1">
+                    <div class="row">
+                    <h3 class="col-12 px-0 pb-3" style="color:#DEB817;text-align: left;">Socials</h3>
+                    <p class="col-3 px-0  pb-3" style="color: white;text-align: left;"><i class="fa fa-facebook" aria-hidden="true"></i></p>
+                    <p class="col-3 px-0 pb-3" style="color: white;text-align: left;"><i class="fa fa-google-plus" aria-hidden="true"></i></p>
+                    <p class="col-3 px-0 pb-3" style="color: white;text-align: left;"><i class="fa fa-whatsapp" aria-hidden="true"></i></p>
+                    <p class="col-3 px-0 pb-3" style="color: white;text-align: left;"><i class="fa fa-youtube-play" aria-hidden="true"></i></p>
+                </div>
+                </div>
+    		</div></center>
+    	<hr class="mb-2" style="background-color:#666666;margin:0;">
+    	<center>
+            <span style="color: white;font-size:0.8rem">2018 Copyright &copy; Wisdom Educational Society. All rights reserved.
+            </span>
+        </center>
+    </div>
+    </footer>
+	<!-- JAVASCRIPT AT BOTTOM TO LOAD PAGE CONTENT FASTER -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
