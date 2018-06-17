@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jolt Family</title>
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BOOTSTRAP v4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav style="position: fixed;background-color: #EC173A!important;width: 100vw;z-index: 10000;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img width="48px" style="-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1)); filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));" class="mt-3 pr-2" height="auto" src="">
+      <a class="navbar-brand" href="#" style="color: white;">JOLT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#rentals" style="color: white;">Jolt Rentals<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solar" style="color: white;">Jolt Solar Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ads" style="color: white;">Jolt Advertisement</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <style type="text/css">
+    .skewed{
+        background:#EC173A;
+    }
+        @media only screen and (min-width: 768px) {
+            /* tablets and desktop */
+            .mobile-top-space{
+                padding-top: 60px;
+            }
+            .welcome-text{
+                color: white;
+                margin-bottom: 0px;
+                font-size: 6vw;
+                font-family: Circular Std Medium Italic,'Work Sans';
+            }
+            .welcome-para{
+                color: white;
+                width: 50%;
+                font-size: 2em;
+                padding-bottom: 150px;
+            }
+            .skewed{
+                box-shadow: 0 10px 50px 0 rgba(0, 0, 0,0.05);
+                /*position: absolute;*/
+                /*visibility: hidden;*/
+                box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                height: auto;
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,-0.11,0,1,0,-110);
+            }
+            .rev-skewed{
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,0.11,0,1,0,100);
+            }
+            .card-text{
+                padding-top:10%;
+                font-size: 2rem;
+            }
+            .prod-title{
+                margin-top: 2.5em;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            /* phones */
+            .mobile-top-space{
+                padding-top: 160px;
+            }
+            .welcome-text{
+                font-size: 8vw;
+                font-family: Circular Std Medium Italic, 'Work Sans';
+            }
+            .welcome-para{
+                width: 80%;
+                font-size: 2em;
+                padding-bottom: 100px;
+            }
+            .skewed{
+                height: auto;
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,-0.11,0,1,0,-110);
+            }
+            .rev-skewed{
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,0.11,0,1,0,0);
+            }
+        }
+
+        @media only screen and (max-width: 767px) and (orientation: portrait) {
+            /* portrait phones */
+            .mobile-top-space{
+                padding-top: 160px;
+            }
+            .animated{
+                display: block;
+            }
+            .welcome-text{
+                font-size: 3rem;
+                font-family: Circular Std Medium Italic, 'Work Sans';
+            }
+            .welcome-para{
+                width: 80%;
+                font-size: 2em;
+                padding-bottom: 50px;
+            }
+            .skewed{
+                height: auto;
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,-0.11,0,1,0,-110);
+            }
+            .rev-skewed{
+                /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+                transform: matrix(1,0.11,0,1,0,0);
+            }
+            .prod-title{
+                padding-top: 0px;
+            }
+        }
+    </style>
+    <section id="top" class="skewed">
+        <div class="rev-skewed mobile-top-space">
+            <h1 class="welcome-text" style="color:white;" align="center">JOLT FAMILY</h1>
+            <center><img align="center" src="logo.png">
+            <p class="welcome-para" style="color:white;">Be smart. Be electric!</p></center>
+        </div>
+    </section>
+    <section id="rentals">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-sm-4 order-md-2 ml-auto" style="margin-right: 15vw;">
+                    <center>
+                        <img style="max-width: 90vw;" height="400vh" src="white.png">
+                    </center>
+                </div>
+                <div class="col-sm-4 order-md-1 ml-auto mr-auto pb-5">
+                    <h3 class="prod-title pb-2 pt-5" style="text-align: left;">
+                        Jolt Rentals
+                    </h3>
+                    <p style="text-align: left;">Best time to save is now! Rent Jolt electric scooter and get your work done</p>
+                    <a href="https://itsnikhil.github.io/itsnikhil/index.html" target="blank" style="padding:9px 12px;margin:10px 12px; border-radius:5px;border: 1px solid #EC173A;color: #EC173A;">Learn more</a>
+                    <a href="https://itsnikhil.github.io/itsnikhil/purchase.html" style="color: white;background-color: #EC173A;border-radius: 5px;padding:10px 12px;margin:10px 12px;">Rent Now!</a>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <section id="solar" style="background-color: #eee;">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-sm-4 ml-auto mr-auto">
+                    <center>
+                        <img style="max-width: 90vw" height="400vh" src="charging stand.png">
+                    </center>
+                </div>
+                <div class="col-sm-4 ml-auto mr-auto pb-5">
+                    <h3 class="prod-title pb-2 pt-5" style="text-align: left;">
+                        Jolt Solar Solutions
+                    </h3>
+                    <p style="text-align: left;">Portable charging stand's for public places to use solar energy and get devices charged.</p>
+                    <a href="https://itsnikhil.github.io/itsnikhil/solar.html" target="blank" style="padding:9px 12px; border-radius:5px;border: 1px solid #EC173A;color: #EC173A;">Learn more</a>
+                    <a href="https://itsnikhil.github.io/itsnikhil/purchase.html" style="color: white;background-color: #EC173A;border-radius: 5px;padding:10px 12px;">Prebook Now!</a>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <section id="ads" style="background-color: #ecc;">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-sm-4 order-md-2 ml-auto mr-auto">
+                    <center>
+                        <img style="max-width: 90vw" height="400vh" src="demo3.png">
+                    </center>
+                </div>
+                <div class="col-sm-4 order-md-1 ml-auto mr-auto pb-5">
+                    <h3 class="prod-title pb-2 pt-5" style="text-align: left;">
+                        Jolt Advertisement
+                    </h3>
+                    <p style="text-align: left;">Bring your brand ad on Jolt products and reach to local audience.</p>
+                    <a href="https://itsnikhil.github.io/itsnikhil/index.html" target="blank" style="padding:9px 12px; border-radius:5px;border: 1px solid #EC173A;color: #EC173A;">Learn more</a>
+                    <a href="https://itsnikhil.github.io/itsnikhil/purchase.html" style="color: white;background-color: #EC173A;border-radius: 5px;padding:10px 12px;">Get the app!</a>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <div style="background-image: url('ft-bg.jpg');background-size: cover; background-position: center;background-repeat: no-repeat; height:auto;">
+            <div class="container" style="color: #fff;">
+                <div class="row pt-4">
+                    <div class="col-6">
+                        <dl class="pt-4">
+                            <dh><h4>Important links</h4></dh>
+                            <dd><a href="#" target="blank" style="color:white;">Jolt Family</a></dd>
+                            <dd><a href="#" target="blank" style="color:white;">Jolt Rentals</a></dd>
+                            <dd><a href="#" target="blank" style="color:white;">Jolt Solar Solutions</a></dd>
+                            <dd><a href="#" target="blank" style="color:white;">Jolt Advertising</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-6">
+                        <dl class="pt-4">
+                            <dh><h4>Our socials</h4></dh>
+                            <dd><a href="#" target="blank" style="color:white;">Facebook</a></dd>
+                            <dd><a href="https://www.instagram.com/joltfamily" target="blank" style="color:white;">Instagram</a></dd>
+                            <dd><a href="https://twitter.com/IndiaJolt" target="blank" style="color:white;">Twitter</a></dd>
+                            <dd><a href="https://api.whatsapp.com/send?phone=919716130797" target="blank" style="color:white;">Whatsapp</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background: #231F1F">
+            <div class="row" style="color: #fff">
+                <div class="col-sm-8 p-2">All rights reserved &copy; copyright 2018</div>
+                <div class="col-sm-4 p-1"><h4 align="right">+91 9716130797</h4></div>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT AT BOTTOM TO LOAD PAGE CONTENT FASTER -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
