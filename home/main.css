@@ -1,0 +1,85 @@
+*{
+    font-family: Google Sans. Product Sans, Helvatica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    background-color: #F1642A;
+    height: auto;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vw;
+    width: 80vw;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+    z-index:0;
+}
+.innerCircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vw;
+    width: 70vw;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 0;
+}
+.topCircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vw;
+    width: 60vw;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    z-index: 0;
+}
+.logo{
+    width: 60px;
+}
+.sun{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 72px;
+    height: 72px;
+    transform: translate(-50%, -50%);
+    min-height: 32px;
+    min-width: 32px;
+}
+.solar-panel{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 70px;
+    min-width: 120px;
+}
+.btn{
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+}
+.btn:hover{
+    box-shadow: 0px 0px 0px rgba(0,0,0,1);
+}.semi-circle{
+    width: 300px;
+    height: 150px;
+    background-color: #F1642A;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow:0px 10px 20px rgba(241,100,42,0.4)
+}
+.orangeCircle{
+    text-align: center;
+    vertical-align: middle; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(241,100,42,0.2);
+}
