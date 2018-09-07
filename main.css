@@ -1,0 +1,40 @@
+*{
+    font-family: Google Sans. Product Sans, Helvatica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    background-color: #F1642A;
+    height: auto;
+}
+.logo{
+    width: 60px;
+}
+.sun{
+    width: 90px;
+    height: 90px;
+    min-height: 32px;
+    min-width: 32px;
+}
+.btn{
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+}
+.btn:hover{
+    box-shadow: 0px 0px 0px rgba(0,0,0,1);
+}.semi-circle{
+    width: 300px;
+    height: 150px;
+    background-color: #F1642A;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow:0px 10px 20px rgba(241,100,42,0.4)
+}
+.orangeCircle{
+    text-align: center;
+    vertical-align: middle; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(241,100,42,0.2);
+}
