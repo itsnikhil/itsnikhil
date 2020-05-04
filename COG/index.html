@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The COG Publication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="myNav">
+        <div class="left">
+            <div class="logo">
+                <svg style="fill: #AF0404" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M240 0H136a8 8 0 0 0-8 8v56H8a8 8 0 0 0-8 8v400a8 8 0 0 0 8 8h232a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8zm-8 416h-88v-16h88zM16 120h112v240H16zm216-32h-88V64h88zM16 376h112v24H16zm128 8V104h88v280zm88-368v32h-88V16zM128 80v24H16V80zM16 416h112v48H16zm128 48v-32h88v32zm0 0"/><path d="M479.742 437.984l-96-368a7.99 7.99 0 0 0-3.715-4.898 8 8 0 0 0-6.09-.812l-120 32a8 8 0 0 0-5.68 9.742l96 368c.535 2.063 1.875 3.824 3.72 4.895s4.03 1.355 6.086.8l120-32a8 8 0 0 0 5.68-9.727zm-201.246-279.44l104.543-27.87 3.762 14.398-104.535 27.914zm112.344 2.05l46.398 177.98-104.504 27.883-46.398-177.992zm50.473 193.47l8.2 31.395-104.543 27.87-8.16-31.383zM370.3 81.8l8.7 33.4-104.543 27.863-8.703-33.383zM357.7 462.2l-8.7-33.4 104.543-27.88 8.703 33.383zM104 144H40a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-64a8 8 0 0 0-8-8zm-8 64H48v-48h48zm0 0"/></svg>
+            </div>
+            <div class="heading">
+                <h4>The COG Publications</h4>
+            </div>
+        </div>
+        <div class="middle">
+            <ul class="navigation">
+                <li class="nav-link active">Home</li>
+                <li class="nav-link">Blog</li>
+                <li class="nav-link">Pricing</li>
+                <li class="nav-link">Features</li>
+                <li class="nav-link">About Us</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="action">
+                <a href="#"><button>Contact Us</button></a>
+            </div>
+        </div>
+        <div class="menu" onclick="toggleNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <script>
+        function toggleNav(x) {
+            x.classList.toggle("change");
+            let middle = document.querySelector("#myNav .middle");
+            let right = document.querySelector("#myNav .right");
+            if (middle.style.display == "block")
+                middle.style.display = "none"
+            else
+                middle.style.display = "block"
+            if (right.style.display == "block")
+                right.style.display = "none"
+            else
+                right.style.display = "block"
+        }
+    </script>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 1477.51px; height: 652.02px; position: absolute; right: 0px; max-width: 100%;z-index: 0"><defs><linearGradient id="A" x1=".5" x2=".145" y2=".597"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M1075.73 479.017l-15 15-173-173-113 113-172.5-172.5-144.5 144.5L284.5 232.775 517.266 0h960.24v423.24L1248.73 652.016zM0 170.263L170.266 0h346.482L173.24 343.506z" fill="url(#A)"/></svg>
+        <div class="main">
+            <div class="left">
+                <h1>Get your book</br><span>published</span></h1>
+                <button>Get your book published >> </button>
+            </div>
+            <div class="right">
+                <div class="graphic">
+                    <svg style="fill: rgba(255, 255, 255, 0.5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M240 0H136a8 8 0 0 0-8 8v56H8a8 8 0 0 0-8 8v400a8 8 0 0 0 8 8h232a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8zm-8 416h-88v-16h88zM16 120h112v240H16zm216-32h-88V64h88zM16 376h112v24H16zm128 8V104h88v280zm88-368v32h-88V16zM128 80v24H16V80zM16 416h112v48H16zm128 48v-32h88v32zm0 0"/><path d="M479.742 437.984l-96-368a7.99 7.99 0 0 0-3.715-4.898 8 8 0 0 0-6.09-.812l-120 32a8 8 0 0 0-5.68 9.742l96 368c.535 2.063 1.875 3.824 3.72 4.895s4.03 1.355 6.086.8l120-32a8 8 0 0 0 5.68-9.727zm-201.246-279.44l104.543-27.87 3.762 14.398-104.535 27.914zm112.344 2.05l46.398 177.98-104.504 27.883-46.398-177.992zm50.473 193.47l8.2 31.395-104.543 27.87-8.16-31.383zM370.3 81.8l8.7 33.4-104.543 27.863-8.703-33.383zM357.7 462.2l-8.7-33.4 104.543-27.88 8.703 33.383zM104 144H40a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-64a8 8 0 0 0-8-8zm-8 64H48v-48h48zm0 0"/></svg>
+                </div>
+                <div class="tagline">
+                    <h2>
+                        Our goal is to get your story reach out to everyone.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>What we offer</h2>
+            <h3>Get your own team of experts to create your paperback and eBook with our Guided Publishing Program or publish yourself using our Xpress Publishing Platform. Sell in over 30,000 stores in 140+ countries and earn upto 100% of the net profits.</h3>
+        </div>
+    </section>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>How The Cog Publication works</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="left">
+                    <h2>01</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Tell us about your book</h3>
+                    </div>
+                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>02</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Tell us about your book</h3>
+                    </div>
+                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>03</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Tell us about your book</h3>
+                    </div>
+                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>Publish in any category!</h2>
+        </div>
+        <h3>Regardless of the genre authors are interested in publishing; they will find a variety of choices here to get their work from their desks and into the hands of eager readers</h3>
+        <div class="categories">
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Novels</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Self</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Business</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Non-fiction</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Fiction</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Short Story</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Poetry</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Biography</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Children's Book</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>History</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Cooking Book</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Mistery</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Online</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Religious Book</h3>
+            </div>
+            <div class="grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="12" fill="#feecea"/><circle cx="12" cy="12" r="6" fill="#f76969"/></svg>
+                <h3>Memoir</h3>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>Our Services and pricing</h2>
+        </div>
+        <h4 class="color-splash">Features</h4>
+        <table class="features">
+            <tr>
+                <th><h3>Service</h3></th>
+                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#571B1B"/></svg>Bronze</h3></th>
+                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#BBBBBB"/></svg>Silver</h3></th>
+                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#FFEBCE"/></svg>Gold</h3></th>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td></td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td></td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td>Service attribute 1</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                </td>
+            </tr>
+            <tr>
+                <td id="last-row"><strong>Pricing</strong></td>
+                <td id="last-row">₹ 100/ page</td>
+                <td id="last-row">₹ 300/ page</td>
+                <td id="last-row">₹ 500/ page</td>
+            </tr>
+        </table>
+        <br>
+        <h4 class="color-splash">Additional Add-ons</h4>
+        <table class="addons">
+            <tr>
+                <td>
+                    <ul>
+                        <li>This is some add on service available to be used for an extra added cost</li>
+                    </ul>
+                </td>
+                <td>₹1,000 extra</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>This is some add on service available to be used for an extra added cost</li>
+                    </ul>
+                </td>
+                <td>₹1,000 extra</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>This is some add on service available to be used for an extra added cost</li>
+                    </ul>
+                </td>
+                <td>₹1,000 extra</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>Become a well known Author</h2>
+        </div>
+        <div class="inspire">
+            <div class="left">
+                <h3>We're an essential resource for both first-time authors and experienced authors who are interested in helping with first class Publication facilities.</br></br>Using all the tools here we empower authors to meet their individual goals</h3>
+            </div>
+            <div class="right">
+                <img src="https://source.unsplash.com/random/440x660" alt="image">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
+            <h2>The authors we help</h2>
+        </div>
+    </section>
+    <footer>
+        <h2>Our goal is to make this world a better place by helping authors and generate a good living for themselves</h2>
+        <div class="title">
+            <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 39.068 29.301"><g transform="translate(0 -64)"><g transform="translate(0 64)"><path d="M7.2,66.377c5.362,4.541,14.77,12.53,17.536,15.021a1.634,1.634,0,0,0,2.363,0c2.768-2.493,12.176-10.483,17.538-15.024a.813.813,0,0,0,.114-1.123A3.232,3.232,0,0,0,42.2,64H9.642a3.232,3.232,0,0,0-2.555,1.254A.813.813,0,0,0,7.2,66.377Z" transform="translate(-6.386 -64)" fill="#fece6f"/><path d="M38.6,126.487a.81.81,0,0,0-.868.118c-5.946,5.041-13.535,11.5-15.923,13.654a3.3,3.3,0,0,1-4.543,0c-2.545-2.293-11.067-9.538-15.921-13.652a.814.814,0,0,0-1.34.621v20.469a3.259,3.259,0,0,0,3.256,3.256H35.812a3.259,3.259,0,0,0,3.256-3.256V127.226A.813.813,0,0,0,38.6,126.487Z" transform="translate(0 -121.649)" fill="#fece6f"/></g></g></svg>
+                info@thecogpublication.in
+            </h3>
+            <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 30.489 27.962"><g transform="translate(-2101.242 -5625.045)"><path d="M2115.863,5626.674l-10.579,7.156v18.392l10.579-7.156Z" transform="translate(-3.541 -0.422)" fill="#fece6f" stroke="#fece6f" stroke-width="1"/><path d="M2105.284,5626.674l7.156,7.156v18.392l-7.156-7.156Z" transform="translate(7.882 -0.422)" fill="none" stroke="#fece6f" stroke-width="1"/><path d="M2115.349,5626.674l-10.065,7.156v18.392l10.065-7.156Z" transform="translate(15.882 -0.422)" fill="#fece6f" stroke="#fece6f" stroke-width="1"/></g></svg>
+                Huda Sector 23-A, Gurugram, Haryana 122017
+            </h3>
+        </div>
+        <ul class="footer-nav">
+            <li class="nav-link">Privacy Policy</li>
+            <li class="nav-link">Sitemap</li>
+        </ul>
+        <p>© 2020 TheCOGPublication.in. All rights reserved</p>
+    </footer>
+</body>
+</html>
