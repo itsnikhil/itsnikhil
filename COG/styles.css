@@ -227,6 +227,50 @@ section {
 .inspire .left h3 {
     font-weight: normal;
 }
+.review-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.review-nav .review-item {
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #CBCBCB;
+    border-radius: 12px;
+}
+.review-nav .active {
+    background-color: #F76969;
+}
+.controller div {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.line {
+    height: 5px;
+    background-color: #FA7D7D;
+    background: -webkit-linear-gradient(90deg, #FE9C6E, #e53935);
+    background: -o-linear-gradient(90deg, #FE9C6E, #e53935);
+    background: -moz-linear-gradient(90deg, #e53935
+, #FA7D7D);
+    background: linear-gradient(90deg, #FE9C6E, #e53935);
+    border: 0;
+}
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0px;
+}
+.author h2 {
+    margin-bottom: 0px;
+}
+.author p {
+    margin-top: 0px;
+}
+.author img {
+    border-radius: 50%;
+    object-fit: cover;
+}
 footer {
     background-color: #232830;
     color: white;
@@ -264,6 +308,13 @@ footer {
     .inspire .right img {
         padding: 0px 0px;
     }
+    .main .left h1 {
+        font-size: 3rem;
+    }
+    .author {
+        text-align: center;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 481px) {
     #myNav {
@@ -274,5 +325,12 @@ footer {
     }
     .menu {
         display: none;
+    }
+    .review .author {
+        flex: 1;
+        text-align: center;
+    }
+    .review .title {
+        flex: 3;
     }
 }
