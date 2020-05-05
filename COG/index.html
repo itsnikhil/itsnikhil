@@ -355,13 +355,75 @@
         <div class="review">
             <div class="author">
                 <img src="https://source.unsplash.com/120x120" alt="author">
-                <h2>Robert Zane</h2>
-                <p>Author of &lt;&lt;Book Name&gt;&gt;</p>
+                <h2>.......... ...........</h2>
+                <p>Author of &lt;&lt;..................&gt;&gt;</p>
             </div>
             <div class="title">
-                <h3>True professionals. I hadn't finished the book if I haven't found The COG Publications</h3>
+                <h3>.........................................................................................................................................................................</h3>
             </div>
         </div>
+        <script>
+            const authorsEl = document.querySelectorAll(".review-nav .review-item");
+            const nameEl = document.querySelector(".review .author h2");
+            const imageEl = document.querySelector(".review .author img");
+            const bookEl = document.querySelector(".review .author p");
+            const textEl = document.querySelector(".review .title h3");
+    
+            const testimonials = [
+                {
+                    text: "True professionals. I hadn't finished the book if I haven't found The COG Publications",
+                    name: "Robert Zane1",
+                    image: "https://source.unsplash.com/120x120",
+                    book: "Book Name1",
+                },
+                {
+                    text: "True professionals. I hadn't finished the book if I haven't found The COG Publications",
+                    name: "Robert Zane2",
+                    image: "https://source.unsplash.com/120x120",
+                    book: "Book Name2",
+                },
+                {
+                    text: "True professionals. I hadn't finished the book if I haven't found The COG Publications",
+                    name: "Robert Zane3",
+                    image: "https://source.unsplash.com/120x120",
+                    book: "Book Name3",
+                },
+                {
+                    text: "True professionals. I hadn't finished the book if I haven't found The COG Publications",
+                    name: "Robert Zane4",
+                    image: "https://source.unsplash.com/120x120",
+                    book: "Book Name4",
+                },
+            ];
+            var currentIdx = 0;
+            addTestimonial(currentIdx);
+            
+            authorsEl.forEach((author, idx) => {
+                author.addEventListener("click", (e) => {
+                    authorsEl[currentIdx].classList.remove("active");
+                    addTestimonial(idx);
+                });
+            });
+            function addTestimonial(idx) {
+                let testimonial = testimonials[idx];
+                currentIdx = idx;
+                nameEl.innerText = testimonial.name;
+                imageEl.innerText = testimonial.image;
+                bookEl.innerText = "Author of <<"+testimonial.book+">>";
+                textEl.innerText = testimonial.text;
+                authorsEl[idx].classList.add("active");
+            }
+            document.querySelector('.controller .prev').addEventListener("click", (e) => {
+                    authorsEl[currentIdx].classList.remove("active");
+                    currentIdx = currentIdx == 0 ? 3 : currentIdx-1;
+                    addTestimonial(currentIdx);
+                });
+            document.querySelector('.controller .next').addEventListener("click", (e) => {
+                    authorsEl[currentIdx].classList.remove("active");
+                    currentIdx = (currentIdx+1)%4;
+                    addTestimonial(currentIdx);
+                });
+        </script>
     </section>
     <footer>
         <h2>Our goal is to make this world a better place by helping authors and generate a good living for themselves</h2>
