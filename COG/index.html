@@ -10,7 +10,7 @@
     <nav id="myNav">
         <div class="left">
             <div class="logo">
-                <svg style="fill: #AF0404" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M240 0H136a8 8 0 0 0-8 8v56H8a8 8 0 0 0-8 8v400a8 8 0 0 0 8 8h232a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8zm-8 416h-88v-16h88zM16 120h112v240H16zm216-32h-88V64h88zM16 376h112v24H16zm128 8V104h88v280zm88-368v32h-88V16zM128 80v24H16V80zM16 416h112v48H16zm128 48v-32h88v32zm0 0"/><path d="M479.742 437.984l-96-368a7.99 7.99 0 0 0-3.715-4.898 8 8 0 0 0-6.09-.812l-120 32a8 8 0 0 0-5.68 9.742l96 368c.535 2.063 1.875 3.824 3.72 4.895s4.03 1.355 6.086.8l120-32a8 8 0 0 0 5.68-9.727zm-201.246-279.44l104.543-27.87 3.762 14.398-104.535 27.914zm112.344 2.05l46.398 177.98-104.504 27.883-46.398-177.992zm50.473 193.47l8.2 31.395-104.543 27.87-8.16-31.383zM370.3 81.8l8.7 33.4-104.543 27.863-8.703-33.383zM357.7 462.2l-8.7-33.4 104.543-27.88 8.703 33.383zM104 144H40a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-64a8 8 0 0 0-8-8zm-8 64H48v-48h48zm0 0"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48"><defs><clipPath id="b"><rect width="48" height="48"/></clipPath></defs><g id="a" clip-path="url(#b)"><g transform="translate(-2.899 -2.439)"><path d="M25.2,14.346V39.273A33.484,33.484,0,0,0,15.94,36.76a28.863,28.863,0,0,0-9.124.86V11.5a28.318,28.318,0,0,1,10.05-.793A20.3,20.3,0,0,1,25.2,14.346Z" transform="translate(0.471 0.229)" fill="#ed2b2b" stroke="#131313" stroke-width="0.5"/><path d="M6.816,14.346V39.273a33.484,33.484,0,0,1,9.256-2.512,28.863,28.863,0,0,1,9.124.86V11.5a28.318,28.318,0,0,0-10.05-.793A20.3,20.3,0,0,0,6.816,14.346Z" transform="translate(21.074 0.229)" fill="#ed2b2b" stroke="#131313" stroke-width="0.5"/><path d="M5.8,10.565v2.629a7.151,7.151,0,0,0-1.252.393,1.976,1.976,0,0,0-.894,1.019L3.616,41.978s-.12.277,0,.369.482,0,.482,0l19.675-.018a5.96,5.96,0,0,0,2.951,1.019,6.483,6.483,0,0,0,3.04-1.019l19.067-.013s.415.149.553,0,0-.595,0-.595V14.393a2.649,2.649,0,0,0-.7-.554,6.239,6.239,0,0,0-1.073-.429V10.565a25.421,25.421,0,0,0-10.767-1.5c-5.222.662-10.123,4.149-10.123,4.149S21.247,9.449,16.2,9.1A30.96,30.96,0,0,0,5.8,10.565Z" transform="translate(0 0)" fill="none" stroke="#131313" stroke-width="0.5"/></g></g></svg>
             </div>
             <div class="heading">
                 <a href="/itsnikhil/COG/index.html"><h4>The COG Publications</h4></a>
@@ -18,13 +18,27 @@
         </div>
         <div class="middle">
             <ul class="navigation">
-                <li class="nav-link active">Home</li>
-                <li class="nav-link">Blog</li>
-                <li class="nav-link">Pricing</li>
-                <li class="nav-link">Features</li>
-                <li class="nav-link">About Us</li>
+                <li class="nav-link"><a href="/itsnikhil/COG/index.html#" onclick="navbarActive(0)">Home</a></li>
+                <li class="nav-link"><a href="/itsnikhil/COG/index.html#process" onclick="navbarActive(1)">Process</a></li>
+                <li class="nav-link"><a href="/itsnikhil/COG/index.html#pricing" onclick="navbarActive(2)">Pricing</a></li>
+                <li class="nav-link"><a href="/itsnikhil/COG/index.html#reviews" onclick="navbarActive(3)">Reviews</a></li>
+                <li class="nav-link"><a href="/itsnikhil/COG/index.html#about-us" onclick="navbarActive(4)">About Us</a></li>
             </ul>
         </div>
+        <script>
+            let active = undefined;
+            function navbarActive(index=0){
+                const navItems = document.querySelectorAll('.navigation li a');
+                if (active !== index){
+                    if (active != undefined)
+                    navItems[active].classList.remove("active");
+                    active = index;
+                    navItems[active].classList.add("active");
+                }
+                return true;
+            }
+            navbarActive();
+        </script>
         <div class="right">
             <div class="action">
                 <a href="/itsnikhil/COG/form.html"><button>Contact Us</button></a>
@@ -64,20 +78,22 @@
                 </div>
                 <div class="tagline">
                     <h2>
-                        Our goal is to get your story reach out to everyone.
+                        Our goal is to get your story reach out to everyone
                     </h2>
                 </div>
             </div>
         </div>
     </header>
-    <section>
+    <section id="about-us">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>What we offer</h2>
-            <h3>Get your own team of experts to create your paperback and eBook with our Guided Publishing Program or publish yourself using our Xpress Publishing Platform. Sell in over 30,000 stores in 140+ countries and earn upto 100% of the net profits.</h3>
+            <h3>The objective of the Cog is to publish the original manuscripts, not published anywhere else and to encourages the young budding authors to provide an easy platform for the publication of their books, journals etc. etc. The cog publication also aims to publish the PhD and M.Phil theses for which degree has already been awarded by university approved and recognized by UGC.  We thoroughly understand the enormous amount of dedication, sincerest and honest efforts an author puts in writing book, after years of painstaking efforts; indeed, it gets difficult to get your book published. 
+            </br></br>The editor’s team of The Cog Publication understands the challenges for especially the first time writers hence; they provide them support to authors in marketing the book, planning the writing of book and ect. in order to get this dream come true. 
+            </br></br>Now, it’s your turn to be an author.</h3>
         </div>
     </section>
-    <section>
+    <section id="process">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>How The Cog Publication works</h2>
@@ -89,9 +105,10 @@
                 </div>
                 <div class="right">
                     <div class="card-title">
-                        <h3>Tell us about your book</h3>
+                        <h3>Reviewing the idea</h3>
                     </div>
-                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                    <div class="card-content">Send us your completed manuscript or a small summary of your book idea. We’ll review it and get back to you in 24 hours.
+                    After this, you’ll sign a contract and we’ll assign a Publishing Manager.</div>
                 </div>
             </div>
             <div class="card">
@@ -100,9 +117,9 @@
                 </div>
                 <div class="right">
                     <div class="card-title">
-                        <h3>Tell us about your book</h3>
+                        <h3>Positioning your brand</h3>
                     </div>
-                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                    <div class="card-content">Our book authoring coach will work with you to figure out the objective of your book, who will benefit from it and what your selling point is.</div>
                 </div>
             </div>
             <div class="card">
@@ -111,14 +128,69 @@
                 </div>
                 <div class="right">
                     <div class="card-title">
-                        <h3>Tell us about your book</h3>
+                        <h3>Creating the content plan</h3>
                     </div>
-                    <div class="card-content">Original visual interface that is easy to use even for novice users.</div>
+                    <div class="card-content">The first thing we’ll do is create an outline for your book, which will be the framework for the entire project. Your coach will also help you figure out your writing plan and schedule.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>04</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Helping you write</h3>
+                    </div>
+                    <div class="card-content">From chapter templates to the structure and the writing style, your book authoring coach will be with you until the finish line, making sure you get exactly what you envision for your book.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>05</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Editing your manuscript</h3>
+                    </div>
+                    <div class="card-content">An editor will thoroughly copy edit your book and ensure that there are no language-related or hygiene issues in your script.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>06</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Designing your cover</h3>
+                    </div>
+                    <div class="card-content">Our team of cover designers will analyze the positioning of your book, do thorough research and create cover options for you with your inputs.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>07</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Distributing your book</h3>
+                    </div>
+                    <div class="card-content">Apart from making your book available on all major online stores worldwide, we will make sure your book is available in 15 premium bookstores in the country.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>08</h2><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#f66767"/><g fill="#c55555"><path d="M24 47.5c-.342 0-.683-.007-1.023-.022C34.932 46.94 44.5 36.616 44.5 24S34.932 1.06 22.977.522C23.318.507 23.658.5 24 .5c6.277 0 12.178 2.444 16.616 6.883S47.5 17.723 47.5 24s-2.444 12.178-6.883 16.617S30.277 47.5 24 47.5z"/><path d="M32.248 45.483c2.972-1.14 5.697-2.902 8.015-5.22C44.607 35.92 47 30.144 47 24a22.85 22.85 0 0 0-6.736-16.264 22.94 22.94 0 0 0-8.016-5.22C39.8 6.455 45 14.606 45 24s-5.2 17.544-12.752 21.483M24 48a23.95 23.95 0 0 1-7.931-1.341c-2.458-.86-4.75-2.112-6.813-3.72a24.08 24.08 0 0 1-5.24-5.643 23.84 23.84 0 0 1-3.212-7.111C3.44 40.085 12.156 47 22 47c12.13 0 22-10.318 22-23S34.13 1 22 1C12.514 1 4.126 7.313 1.128 16.7a23.85 23.85 0 0 1 2.826-5.912c1.432-2.17 3.196-4.085 5.243-5.69 2.068-1.622 4.368-2.885 6.836-3.754C18.587.455 21.268 0 24 0a23.84 23.84 0 0 1 16.97 7.029A23.84 23.84 0 0 1 48 24a23.84 23.84 0 0 1-7.029 16.97A23.84 23.84 0 0 1 24 48z"/></g></svg>
+                </div>
+                <div class="right">
+                    <div class="card-title">
+                        <h3>Promoting your brand</h3>
+                    </div>
+                    <div class="card-content">Our book marketing experts will work with you for 3 months to build a strong content marketing plan for you and will also run a 360-degree campaign to give your book sales a boost.</div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="publish">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>Publish in any category!</h2>
@@ -187,112 +259,275 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="pricing">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>Our Services and pricing</h2>
         </div>
         <h4 class="color-splash">Features</h4>
         <table class="features">
-            <tr>
-                <th><h3>Service</h3></th>
-                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#571B1B"/></svg>Bronze</h3></th>
-                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#BBBBBB"/></svg>Silver</h3></th>
-                <th><h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#FFEBCE"/></svg>Gold</h3></th>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td></td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td></td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td></td>
-                <td></td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td>Service attribute 1</td>
-                <td></td>
-                <td></td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41"><defs><linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fea26e"/><stop offset="1" stop-color="#fe5b71"/></linearGradient></defs><rect width="41" height="41" rx="8" transform="translate(0.434)" fill="url(#a)"/><path d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-731.074 -3301.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
-                </td>
-            </tr>
-            <tr>
-                <td id="last-row"><strong>Pricing</strong></td>
-                <td id="last-row">₹ 100/ page</td>
-                <td id="last-row">₹ 300/ page</td>
-                <td id="last-row">₹ 500/ page</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th><h2>Service</h2></th>
+                    <th><h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#571B1B"/></svg>Bronze</h2></th>
+                    <th><h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#BBBBBB"/></svg>Silver</h2></th>
+                    <th><h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18"><circle cx="9" cy="9" r="9" fill="#FFEBCE"/></svg>Gold</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Publication Support</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Dedicated Project Manager</dl>
+                            <dl>Guided Publishing</dl>
+                            <dl>Scheduled Online Release</dl>
+                            <dl>Marketing Consultancy/ Tips</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Dedicated Project Manager</dl>
+                            <dl>Guided Publishing</dl>
+                            <dl>Scheduled Online Release</dl>
+                            <dl>Marketing Consultancy/ Tips</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Dedicated Project Manager</dl>
+                            <dl>Guided Publishing</dl>
+                            <dl>Scheduled Online Release</dl>
+                            <dl>Marketing Consultancy/ Tips</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Book Specification</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Paperback & eBook</dl>
+                            <dl>ISBN & Bar Code</dl>
+                            <dl>B&W Interior</dl>
+                            <dl>Text Only Interior</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Paperback & eBook</dl>
+                            <dl>ISBN & Bar Code</dl>
+                            <dl>B&W Interior</dl>
+                            <dl>Limited Images/ Tables</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Paperback & eBook</dl>
+                            <dl>ISBN & Bar Code</dl>
+                            <dl>B&W Interior</dl>
+                            <dl>Unlimited Images/ Tables</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cover Designing</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Standard Cover</dl>
+                            <dl>Paperback Binding</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Advanced Cover</dl>
+                            <dl>Paperback Binding</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Premium Cover</dl>
+                            <dl>Paperback/ Hardback Binding</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Editing and Proofreading</strong></td>
+                    <td>
+                        <dd>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Basic Editing – 20K Words</dl>
+                            <dl>-</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Basic Editing – 40K Words</dl>
+                            <dl>Or, Comprehensive Editing – 20K Words</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Distribution</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Amazon.in, Amazon.com, Flipkart, Snapdeal Etc.</dl>
+                            <dl>Kindle, Google Books, Playstore, Kobo Etc.</dl>
+                            <dl>-</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Amazon.in, Amazon.com, Flipkart, Snapdeal Etc.</dl>
+                            <dl>Kindle, Google Books, Playstore, Kobo Etc.</dl>
+                            <dl>Ingram Distribution</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Amazon.in, Amazon.com, Flipkart, Snapdeal Etc.</dl>
+                            <dl>Kindle, Google Books, Playstore, Kobo Etc.</dl>
+                            <dl>Ingram Distribution</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Marketing</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Social Media Marketing</dl>
+                            <dl>Author Certificate</dl>
+                            <dl>Author Story Article – 1</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Social Media Marketing</dl>
+                            <dl>Visiting Cards & Posters</dl>
+                            <dl>Printed Author Certificate</dl>
+                            <dl>Book Review – 1</dl>
+                            <dl>Author Interview – 1</dl>
+                            <dl>Video Trailer</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                            <dl>-</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Social Media Marketing</dl>
+                            <dl>Visiting Cards & Posters</dl>
+                            <dl>Printed Author Certificate</dl>
+                            <dl>Author Story – 3</dl>
+                            <dl>Advanced Video Trailer</dl>
+                            <dl>Author Website</dl>
+                            <dl>Book Reviews – 3</dl>
+                            <dl>Author Interviews – 3</dl>
+                            <dl>Google/ FB Adwords</dl>
+                            <dl>Giveaway Contest</dl>
+                            <dl>Newspaper Feature</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Printing</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Lifetime Inventory</dl>
+                            <dl>Author Copies – 10</dl>
+                            <dl>Extra Copies – At Printing Cost</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Lifetime Inventory</dl>
+                            <dl>Author Copies – 20</dl>
+                            <dl>Extra Copies – At Printing Cost</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Lifetime Inventory</dl>
+                            <dl>Author Copies – 50</dl>
+                            <dl>Extra Copies – At Printing Cost</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Security</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Author Copyright</dl>
+                            <dl>Non-Exclusive Agreement</dl>
+                            <dl>–</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Author Copyright</dl>
+                            <dl>Non-Exclusive Agreement</dl>
+                            <dl>–</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Author Copyright</dl>
+                            <dl>Non-Exclusive Agreement</dl>
+                            <dl>Govt. Copyright Registration</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Sales and Royalty</strong></td>
+                    <td>
+                        <dd>
+                            <dl>Live Sales Report</dl>
+                            <dl>100% Profit Share</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Live Sales Report</dl>
+                            <dl>100% Profit Share</dl>
+                        </dd>
+                    </td>
+                    <td>
+                        <dd>
+                            <dl>Live Sales Report</dl>
+                            <dl>100% Profit Share</dl>
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="last-row" class="action"><strong>Pricing</strong></td>
+                    <td id="last-row" class="action"><h3>₹ 9,999 Incl. GST</h3><a href="/itsnikhil/COG/form.html"><button>PUBLISH NOW</button></a></td>
+                    <td id="last-row" class="action"><h3>₹ 19,999 Incl. GST</h3><a href="/itsnikhil/COG/form.html"><button>PUBLISH NOW</button></a></td>
+                    <td id="last-row" class="action"><h3>₹ 49,999 Incl. GST</h3><a href="/itsnikhil/COG/form.html"><button>PUBLISH NOW</button></a></td>
+                </tr>
+                <!-- <tr>
+                    <td id="last-row"></td>
+                    <td id="last-row"><button>PUBLISH NOW</button></td>
+                    <td id="last-row"><button>PUBLISH NOW</button></td>
+                    <td id="last-row"><button>PUBLISH NOW</button></td>
+                </tr> -->
+        </tbody>
         </table>
         <br>
-        <h4 class="color-splash">Additional Add-ons</h4>
+        <!-- <h4 class="color-splash">Additional Add-ons</h4>
         <table class="addons">
             <tr>
                 <td>
@@ -318,23 +553,23 @@
                 </td>
                 <td>₹1,000 extra</td>
             </tr>
-        </table>
+        </table> -->
     </section>
-    <section>
+    <section id="become-author">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>Become a well known Author</h2>
         </div>
         <div class="inspire">
             <div class="left">
-                <h3>We're an essential resource for both first-time authors and experienced authors who are interested in helping with first class Publication facilities.</br></br>Using all the tools here we empower authors to meet their individual goals</h3>
+                <h3>Are you a professional speaker? Do you want to increase your credibility and promote your brand? Work with an exclusive team of book experts, who will help you position your brand correctly, to the right audience.</br></br>The Cog Publication is the one stop solution for those who have been struggling to get their book published. We're an essential resource for both first-time authors and experienced authors who are interested in helping with first class Publication facilities.</br></br>Using all the tools here we empower authors to meet their individual goals.</h3>
             </div>
             <div class="right">
-                <img src="https://source.unsplash.com/random/440x660" alt="image">
+                <img src="https://res.cloudinary.com/journalapp/image/upload/v1588889142/author_l7eoem.jpg" alt="image">
             </div>
         </div>
     </section>
-    <section>
+    <section id="reviews">
         <div class="title">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" viewBox="0 0 16.851 46.101"><defs><style>.a{fill:#f66767;}</style></defs><path class="a" d="M-.143,2.762l8.012-1.6L8,44.883-.354,46.506Z" transform="translate(7.631 47.178) rotate(-169)"/></svg>
             <h2>The authors we help</h2>
@@ -426,7 +661,7 @@
         </script>
     </section>
     <footer>
-        <h2>Our goal is to make this world a better place by helping authors and generate a good living for themselves</h2>
+        <h2>Turn your idea into a book. Use it to build your brand and create a global impact.</h2>
         <div class="title">
             <h3>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 39.068 29.301"><g transform="translate(0 -64)"><g transform="translate(0 64)"><path d="M7.2,66.377c5.362,4.541,14.77,12.53,17.536,15.021a1.634,1.634,0,0,0,2.363,0c2.768-2.493,12.176-10.483,17.538-15.024a.813.813,0,0,0,.114-1.123A3.232,3.232,0,0,0,42.2,64H9.642a3.232,3.232,0,0,0-2.555,1.254A.813.813,0,0,0,7.2,66.377Z" transform="translate(-6.386 -64)" fill="#fece6f"/><path d="M38.6,126.487a.81.81,0,0,0-.868.118c-5.946,5.041-13.535,11.5-15.923,13.654a3.3,3.3,0,0,1-4.543,0c-2.545-2.293-11.067-9.538-15.921-13.652a.814.814,0,0,0-1.34.621v20.469a3.259,3.259,0,0,0,3.256,3.256H35.812a3.259,3.259,0,0,0,3.256-3.256V127.226A.813.813,0,0,0,38.6,126.487Z" transform="translate(0 -121.649)" fill="#fece6f"/></g></g></svg>

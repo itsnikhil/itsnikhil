@@ -8,11 +8,16 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-a, a:visited, a:link {
+
+a,
+a:visited,
+a:link {
     text-decoration: none;
     color: black;
 }
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +52,7 @@ nav .left {
     margin: 0px 10px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link a:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: #F66767;
@@ -154,6 +159,7 @@ header .graphic {
 .title>svg {
     position: absolute;
     z-index: -1;
+    margin-left: -10px;
 }
 
 section {
@@ -167,7 +173,6 @@ section {
 
 .card {
     flex: 1;
-    min-width: 250px;
     border: 1px solid #CCCCCC;
     border-radius: 20px;
     padding: 2rem 1rem;
@@ -260,7 +265,6 @@ section {
 }
 
 .inspire .right img {
-    padding-left: 10vw;
     width: 100%;
     object-fit: cover;
 }
@@ -375,13 +379,85 @@ footer {
     .main .left h1 {
         font-size: 3rem;
     }
+
     .card {
         padding: 20px;
         margin: 6px 0px;
     }
+
     .author {
         text-align: center;
         width: 100%;
+    }
+
+    .card {
+        min-width: 250px;
+    }
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        font-weight: bolder;
+        padding: 3px 5px;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+
+    /*
+	Label the data
+    */
+    td:nth-of-type(1):before {
+        content: "";
+    }
+
+    td:nth-of-type(2):before {
+        content: "BRONZE";
+        background-color: rgba(87,27,27,0.5);
+        color: white;
+    }
+
+    td:nth-of-type(3):before {
+        content: "SILVER";
+        background-color: rgba(187,187,187,0.5);
+        color: #555;
+    }
+
+    td:nth-of-type(4):before {
+        content: "GOLD";
+        background-color: rgba(255,235,206,0.7);
+        color: #6e4d1b;
     }
 }
 
@@ -394,9 +470,15 @@ footer {
     #myNav .right {
         display: block;
     }
+
     .menu {
         display: none;
     }
+
+    .card {
+        min-width: max(250px, 20vw);
+    }
+
     .review .author {
         flex: 1;
         text-align: center;
@@ -404,6 +486,9 @@ footer {
 
     .review .title {
         flex: 3;
+    }
+    .inspire .left h3 {
+        padding-right: 20px;
     }
 }
 
@@ -431,7 +516,9 @@ footer {
     font-size: 16px;
 }
 
-.form input[type=text], .form input[type=email], .form input[type=number] {
+.form input[type=text],
+.form input[type=email],
+.form input[type=number] {
     background-color: #f1f1f1;
     width: min(100%, 400px);
 }
@@ -440,6 +527,20 @@ footer {
     display: flex;
     align-items: start;
     flex-direction: column;
+}
+
+#submit-tag {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    background-color: #f66767;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#submit-tag svg {
+    padding: 8px;
+    fill: white;
 }
 
 .container ul {
@@ -550,27 +651,33 @@ footer {
     border-radius: 50%;
     background: white;
 }
+
 .cards .selected {
-    border: 1px solid #F76969!important;
+    border: 1px solid #F76969 !important;
     box-shadow: 0px 0px 6px rgb(247, 105, 105, 0.5);
 }
+
 .plan .cards .card {
     border: 1px dashed #CCCCCC;
 }
+
 .plan .cards .card:hover {
     border: 1px solid #CCCCCC;
     box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.15);
     cursor: pointer;
 }
+
 .form-control {
     margin: 1rem 0px;
 }
+
 #submit-btn {
     width: min(300px, 100%);
     border-radius: 16px;
     background-color: #F66767;
     color: white;
 }
+
 svg .tick {
     display: none;
 }
