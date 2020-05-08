@@ -91,7 +91,7 @@ function sendMail(){
         let toEmail = encodeURI('editor@thecogpublication.in');
         let subject = encodeURI(`Support request by ${data['name']}`);
         let plan = data['selectedValue'] == 'None' ? `I haven't decided any plan to choose from.` : `I would like to choose <strong>${data['selectedValue']}</strong> plan`
-        let body = encodeURI(`<h3>Hello! I am ${data['name']}</h3><p>I wanted some help in publishing my book - <strong><<YOUR BOOK NAME>></strong> which will be ready - ${data['bookStatus']}. The book is of type - ${data['items']}</p></br><p>${plan}</p></br><p>You can reach out to me via Email: ${data['email']} or Contact: ${data['phone']}</p></br></br><p>Thank you,</p><p>${data['name']}</p>`);
+        let body = encodeURI(`<h3>Hello! I am ${data['name']}</h3><p>I wanted some help in publishing my book - <strong>{YOUR BOOK NAME}</strong> which will be ready - ${data['bookStatus']}. The book is of type - ${data['items']}</p></br><p>${plan}</p></br><p>You can reach out to me via</br>Email: ${data['email']} or</br>Contact: ${data['phone']}</p></br></br><p>Thank you,</p><p>${data['name']}</p>`);
         window.location.href = `mailto:${toEmail}?&subject=${subject}&body=${body}`
     }
 }
