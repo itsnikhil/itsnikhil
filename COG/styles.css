@@ -37,7 +37,10 @@ nav .left {
 
 .logo {
     width: 42px;
-    margin: 10px;
+    margin-left: 10px;
+}
+.heading {
+    margin-left: 20px;
 }
 
 .navigation {
@@ -340,6 +343,15 @@ footer {
     color: #FECE6F;
 
 }
+footer .title {
+    vertical-align: middle;
+}
+footer .title a {
+    color: white;
+}
+footer .title svg {
+    vertical-align: middle;
+}
 
 @media screen and (max-width: 480px) {
     #myNav {
@@ -521,6 +533,9 @@ footer {
 .form input[type=number] {
     background-color: #f1f1f1;
     width: min(100%, 400px);
+}
+.form #tag {
+    width: min(75%, 400px);
 }
 
 .tags {

@@ -88,9 +88,10 @@ function validateData(){
 function sendMail(){
     data = validateData();
     if (data){
-        let fromEmail = encodeURI('taneja.nikhil03@gmail.com');
+        let toEmail = encodeURI('editor@thecogpublication.in');
         let subject = encodeURI(`Support request by ${data['name']}`);
-        let body = encodeURI(`<h1>HEADING</h1>Name: ${data['name']}\nEmail: ${data['email']}\nContact: ${data['phone']}\nBook Status: ${data['bookStatus']}\nPlan: ${data['selectedValue']}\nBook tags: ${data['items']}\n`);
-        window.location.href = `mailto:${fromEmail}?&subject=${subject}&body=${body}`
+        let plan = data['selectedValue'] == 'None' ? `I haven't decided any plan to choose from.` : `I would like to choose <strong>${data['selectedValue']}</strong> plan`
+        let body = encodeURI(`<h3>Hello! I am ${data['name']}</h3><p>I wanted some help in publishing my book - <strong><<YOUR BOOK NAME>></strong> which will be ready - ${data['bookStatus']}. The book is of type - ${data['items']}</p></br><p>${plan}</p></br><p>You can reach out to me via Email: ${data['email']} or Contact: ${data['phone']}</p></br></br><p>Thank you,</p><p>${data['name']}</p>`);
+        window.location.href = `mailto:${toEmail}?&subject=${subject}&body=${body}`
     }
 }

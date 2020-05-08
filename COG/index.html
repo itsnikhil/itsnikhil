@@ -10,7 +10,7 @@
     <nav id="myNav">
         <div class="left">
             <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48"><defs><clipPath id="b"><rect width="48" height="48"/></clipPath></defs><g id="a" clip-path="url(#b)"><g transform="translate(-2.899 -2.439)"><path d="M25.2,14.346V39.273A33.484,33.484,0,0,0,15.94,36.76a28.863,28.863,0,0,0-9.124.86V11.5a28.318,28.318,0,0,1,10.05-.793A20.3,20.3,0,0,1,25.2,14.346Z" transform="translate(0.471 0.229)" fill="#ed2b2b" stroke="#131313" stroke-width="0.5"/><path d="M6.816,14.346V39.273a33.484,33.484,0,0,1,9.256-2.512,28.863,28.863,0,0,1,9.124.86V11.5a28.318,28.318,0,0,0-10.05-.793A20.3,20.3,0,0,0,6.816,14.346Z" transform="translate(21.074 0.229)" fill="#ed2b2b" stroke="#131313" stroke-width="0.5"/><path d="M5.8,10.565v2.629a7.151,7.151,0,0,0-1.252.393,1.976,1.976,0,0,0-.894,1.019L3.616,41.978s-.12.277,0,.369.482,0,.482,0l19.675-.018a5.96,5.96,0,0,0,2.951,1.019,6.483,6.483,0,0,0,3.04-1.019l19.067-.013s.415.149.553,0,0-.595,0-.595V14.393a2.649,2.649,0,0,0-.7-.554,6.239,6.239,0,0,0-1.073-.429V10.565a25.421,25.421,0,0,0-10.767-1.5c-5.222.662-10.123,4.149-10.123,4.149S21.247,9.449,16.2,9.1A30.96,30.96,0,0,0,5.8,10.565Z" transform="translate(0 0)" fill="none" stroke="#131313" stroke-width="0.5"/></g></g></svg>
+                <img src="./logo.jpg" class="logo" alt="The COG Publications logo">
             </div>
             <div class="heading">
                 <a href="/itsnikhil/COG/index.html"><h4>The COG Publications</h4></a>
@@ -589,9 +589,9 @@
         <hr class="line">
         <div class="review">
             <div class="author">
-                <img src="https://source.unsplash.com/120x120" alt="author">
+                <!-- <img src="https://source.unsplash.com/120x120" alt="author">
                 <h2>.......... ...........</h2>
-                <p>Author of &lt;&lt;..................&gt;&gt;</p>
+                <p>Author of &lt;&lt;..................&gt;&gt;</p> -->
             </div>
             <div class="title">
                 <h3>.........................................................................................................................................................................</h3>
@@ -599,9 +599,9 @@
         </div>
         <script>
             const authorsEl = document.querySelectorAll(".review-nav .review-item");
-            const nameEl = document.querySelector(".review .author h2");
-            const imageEl = document.querySelector(".review .author img");
-            const bookEl = document.querySelector(".review .author p");
+            // const nameEl = document.querySelector(".review .author h2");
+            // const imageEl = document.querySelector(".review .author img");
+            // const bookEl = document.querySelector(".review .author p");
             const textEl = document.querySelector(".review .title h3");
     
             const testimonials = [
@@ -642,9 +642,9 @@
             function addTestimonial(idx) {
                 let testimonial = testimonials[idx];
                 currentIdx = idx;
-                nameEl.innerText = testimonial.name;
-                imageEl.innerText = testimonial.image;
-                bookEl.innerText = "Author of <<"+testimonial.book+">>";
+                // nameEl.innerText = testimonial.name;
+                // imageEl.innerText = testimonial.image;
+                // bookEl.innerText = "Author of <<"+testimonial.book+">>";
                 textEl.innerText = testimonial.text;
                 authorsEl[idx].classList.add("active");
             }
@@ -661,16 +661,23 @@
         </script>
     </section>
     <footer>
-        <h2>Turn your idea into a book. Use it to build your brand and create a global impact.</h2>
+        <h3>Turn your idea into a book. Use it to build your brand and create a global impact.</h3>
         <div class="title">
-            <h3>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 39.068 29.301"><g transform="translate(0 -64)"><g transform="translate(0 64)"><path d="M7.2,66.377c5.362,4.541,14.77,12.53,17.536,15.021a1.634,1.634,0,0,0,2.363,0c2.768-2.493,12.176-10.483,17.538-15.024a.813.813,0,0,0,.114-1.123A3.232,3.232,0,0,0,42.2,64H9.642a3.232,3.232,0,0,0-2.555,1.254A.813.813,0,0,0,7.2,66.377Z" transform="translate(-6.386 -64)" fill="#fece6f"/><path d="M38.6,126.487a.81.81,0,0,0-.868.118c-5.946,5.041-13.535,11.5-15.923,13.654a3.3,3.3,0,0,1-4.543,0c-2.545-2.293-11.067-9.538-15.921-13.652a.814.814,0,0,0-1.34.621v20.469a3.259,3.259,0,0,0,3.256,3.256H35.812a3.259,3.259,0,0,0,3.256-3.256V127.226A.813.813,0,0,0,38.6,126.487Z" transform="translate(0 -121.649)" fill="#fece6f"/></g></g></svg>
-                info@thecogpublication.in
-            </h3>
-            <h3>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 30.489 27.962"><g transform="translate(-2101.242 -5625.045)"><path d="M2115.863,5626.674l-10.579,7.156v18.392l10.579-7.156Z" transform="translate(-3.541 -0.422)" fill="#fece6f" stroke="#fece6f" stroke-width="1"/><path d="M2105.284,5626.674l7.156,7.156v18.392l-7.156-7.156Z" transform="translate(7.882 -0.422)" fill="none" stroke="#fece6f" stroke-width="1"/><path d="M2115.349,5626.674l-10.065,7.156v18.392l10.065-7.156Z" transform="translate(15.882 -0.422)" fill="#fece6f" stroke="#fece6f" stroke-width="1"/></g></svg>
-                Huda Sector 23-A, Gurugram, Haryana 122017
-            </h3>
+            <a href="mailto:editor@thecogpublication.in"><span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 39.068 29.301">
+                    <g transform="translate(0 -64)">
+                        <g transform="translate(0 64)">
+                            <path
+                                d="M7.2,66.377c5.362,4.541,14.77,12.53,17.536,15.021a1.634,1.634,0,0,0,2.363,0c2.768-2.493,12.176-10.483,17.538-15.024a.813.813,0,0,0,.114-1.123A3.232,3.232,0,0,0,42.2,64H9.642a3.232,3.232,0,0,0-2.555,1.254A.813.813,0,0,0,7.2,66.377Z"
+                                transform="translate(-6.386 -64)" fill="#fece6f" />
+                            <path
+                                d="M38.6,126.487a.81.81,0,0,0-.868.118c-5.946,5.041-13.535,11.5-15.923,13.654a3.3,3.3,0,0,1-4.543,0c-2.545-2.293-11.067-9.538-15.921-13.652a.814.814,0,0,0-1.34.621v20.469a3.259,3.259,0,0,0,3.256,3.256H35.812a3.259,3.259,0,0,0,3.256-3.256V127.226A.813.813,0,0,0,38.6,126.487Z"
+                                transform="translate(0 -121.649)" fill="#fece6f" />
+                        </g>
+                    </g>
+                </svg>
+                editor@thecogpublication.in
+            </span></a>
         </div>
         <ul class="footer-nav">
             <li class="nav-link">Privacy Policy</li>
