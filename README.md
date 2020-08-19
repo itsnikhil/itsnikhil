@@ -11,6 +11,6 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on Hacktoberfest
 - 🤔 I’m looking for help with Google App Scipts
 - 💬 Ask me about Emerging Technologies
-- 📫 How to reach me: [Telegram](https://t.me/itsnikhil)
+- 📫 How to reach me: [Telegram](https://t.me/taneja03)
 - 😄 Pronouns: Fun to talk to
 - ⚡ Fun fact: I am the King of my World!
